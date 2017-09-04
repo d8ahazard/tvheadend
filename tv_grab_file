@@ -16,7 +16,6 @@ do
        --description) args="${args}-d ";;
        --version) args="${args}-v ";;
        --capabilities) args="${args}-c ";;
-       --url) args="${args}-u ";;
        #pass through anything else
        *) [[ "${arg:0:1}" == "-" ]] || delim="\""
            args="${args}${delim}${arg}${delim} ";;
